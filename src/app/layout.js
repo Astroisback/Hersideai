@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { AuthProvider } from "@/context/AuthContext";
 import Footer from "@/components/shared/Footer";
+import AIChatWidget from "@/components/AIChatWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
               {children}
             </main>
             <Footer />
+            <AIChatWidget />
           </div>
         </AuthProvider>
       </body>
